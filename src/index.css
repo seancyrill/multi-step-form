@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --Marine-blue: 213 96% 18%;
+    --Purplish-blue: 243 100% 62%;
+    --Pastel-blue: 228 100% 84%;
+    --Light-blue: 206 94% 87%;
+    --Strawberry-red: 354 84% 57%;
+    --Cool-gray: 231 11% 63%;
+    --Light-gray: 229 24% 87%;
+    --Magnolia: 217 100% 97%;
+    --Alabaster: 231 100% 99%;
+    --White: 0 0% 100%;
+  }
+}

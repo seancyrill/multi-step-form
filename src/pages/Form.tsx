@@ -41,7 +41,7 @@ export default function Form() {
         onSubmit={(e) => (e.preventDefault(), onSubmit())}
       >
         <Nav orientation="landscape" handleOrientation={handleOrientation} />
-        <div className="px flex w-full flex-col gap-4 px-4 py-6 landscape:lg:py-20 landscape:lg:pr-8">
+        <div className="px flex w-full flex-col justify-between gap-4 px-4 py-6 landscape:lg:py-20 landscape:lg:pr-32">
           <PersonalInfo />
           <Plans />
           <AddOns />

@@ -84,7 +84,7 @@ export default function PersonalInfo() {
   return (
     <>
       {stepIndex === 0 && (
-        <fieldset>
+        <fieldset className="flex w-full flex-col gap-4">
           <legend className="text-2xl font-bold text-Marine-blue">
             Personal info
           </legend>
@@ -110,10 +110,10 @@ export default function PersonalInfo() {
                   personalInfo[input.name as keyof typeof personalInfo].value
                 }
                 onChange={handleInputChange}
-                className={`block w-full rounded-md border-[1px] px-4 py-3 focus:outline-none focus:ring-2 ${
+                className={`block w-full rounded-md border-[1px] px-4 py-3 focus:outline-none focus:ring-1 ${
                   personalInfo[input.name as keyof typeof personalInfo].error
-                    ? "border-Strawberry-red focus:ring-Strawberry-red"
-                    : "border-Light-gray"
+                    ? "border-Strawberry-red text-Strawberry-red focus:ring-Strawberry-red"
+                    : "border-Light-gray text-Marine-blue focus:ring-Marine-blue"
                 }`}
               />
             </div>

@@ -56,8 +56,7 @@ export default function PersonalInfo() {
       type: "text",
       placeholder: "e.g. Stephen King",
       title: "First name and Last name",
-      pattern:
-        /(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})/,
+      pattern: /[A-Za-z\s]{6,26}/,
       error: personalInfo.name.error,
     },
     {
